@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="test.css">
+	<title>validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+	<form action="https://www.cybrosys.com/" method="post">
+		<h2 align="center">SIGN UP</h2>
+ <table >
+ 	<tr>
+ 		<th>Name</th>
+ 		<td><input  id="name" type="text" name="" minlength="3" placeholder="min 3 characters" required><br>
+		<p id="nwarning"><small>min 3 and no digits</small></p></td>
+ 	</tr>
+ 	<tr>
+ 		<th>Email</th>
+ 		<td><input type="email" id="email" placeholder="enter email" required><br>
+		<p id="ewarning"><small>invalid email</small></p></td>
+ 	</tr>
+ 	<tr>
+ 		<th>Addres</th>
+ 		<td><textarea name="addres"  placeholder="current address" required></textarea></td>
+ 	</tr>
+	<tr>
+ 		<th>DOB</th>
+ 		<td><input type="date" id="DateOfBirth" name="DateOfBirth" value="" class="form-control" required/><br>
+		<p id="dwarning"><small>greater than current date</small></p></td>
+ 	</tr>
+ 	<tr>
+ 		<th>Age</th>
+ 		<td><input type="text" id="Age" name="Age"  class="form-control" placeholder="Age" readonly /></td>
+ 	</tr>
+ 	<tr>
+ 		<th>Gender</th>
+ 		<td>
+			<i class="fa fa-male"></i><input type="radio" id="male" name="fav_language" value="male" required>
+            <label for="male">Male</label><br>
+            <i class="fa fa-female"></i><input type="radio" id="female" name="fav_language" value="female">
+  			<label for="female">female</label><br>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<th>Password</th>
+ 		<td><input type="Password" id="txtPassword" minlength="8" placeholder="password"  required>
+		<i class="fa fa-light fa-eye-slash" aria-hidden="true" id="eye"></i><br>
+		<p id="pwarning"><small>contain min 8 characters,one digit<br>,one capital letter,one small
+			letter<br>,one special character</small></p></td>
+ 	</tr>
+ 	<tr>
+ 		<th>confirm</th>
+ 		<td><input type="Password" id="txtConfirmPassword" minlength="8" placeholder="repeat password" required>
+			<i class="fa fa-light fa-eye-slash" id="eyetwo"></i><br>
+		<p id="cwarning"><small>Confirm password does not match<br>Password</small></p></td>
+		 <!-- <td><p id="CheckPasswordMatch" aria-setsize="10"></p></td> -->
+ 	</tr>
+ 	<tr>
+ 		<td colspan="2">
+			<div class="subscribe">
+				<!-- <input type="submit" id="btnSubmit" class="btn" value="sign in" style="font-size: 16px"> -->
+				<button id="btnSubmit" class="btn" style="font-size: 16px">Sign in</button>
+			</div>
+		 </td>
+ 	</tr>
+ </table>
+ </form>
+</body>
+</html>
